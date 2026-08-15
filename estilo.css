@@ -10,135 +10,231 @@ html {
 
 body {
     font-family: "Times New Roman", serif;
-    background: #030303;
-    color: #f5f5f5;
+    background:
+        radial-gradient(circle at top, #3b0618 0%, #17051f 35%, #05030a 75%);
+    color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-/* FONDO */
+
+/* =========================================
+   FONDO ROJO + MORADO + ORO
+========================================= */
 
 body::before {
     content: "";
     position: fixed;
+
     inset: 0;
+
     pointer-events: none;
+
     z-index: -2;
 
     background-image:
-        radial-gradient(#b8860b 1px, transparent 1px),
-        radial-gradient(#d4af37 1px, transparent 1px);
+        radial-gradient(#d4af37 1px, transparent 1px),
+        radial-gradient(#8b1e3f 1px, transparent 1px),
+        radial-gradient(#6a0dad 1px, transparent 1px);
 
     background-size:
-        65px 65px,
-        100px 100px;
+        70px 70px,
+        100px 100px,
+        130px 130px;
 
     background-position:
         0 0,
-        40px 40px;
+        30px 40px,
+        60px 20px;
 
-    opacity: 0.25;
+    opacity: 0.28;
 }
 
-/* HEADER */
+
+/* LUZ DECORATIVA */
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 500px;
+    height: 500px;
+
+    top: -200px;
+    left: -200px;
+
+    background: rgba(139, 0, 0, 0.20);
+
+    filter: blur(100px);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+
+/* =========================================
+   INICIO
+========================================= */
 
 header {
     min-height: 100vh;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     padding: 40px 20px;
+
     text-align: center;
 }
 
+
 .principal {
     width: 100%;
+
     max-width: 900px;
 
     padding: 45px 30px;
 
-    background: rgba(0, 0, 0, 0.93);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(30, 2, 18, 0.96),
+            rgba(18, 4, 30, 0.96)
+        );
 
-    border: 1px solid #b8860b;
+    border: 1px solid #d4af37;
+
     border-radius: 25px;
 
     box-shadow:
-        0 0 30px rgba(212, 175, 55, 0.12);
+        0 0 25px rgba(139, 0, 0, 0.30),
+        0 0 45px rgba(106, 13, 173, 0.18);
+
 }
 
-/* LOGO */
+
+/* =========================================
+   LOGO
+========================================= */
 
 .logo {
     font-family: cursive;
+
     font-size: 75px;
+
     color: #d4af37;
 
     text-shadow:
-        0 0 15px rgba(212, 175, 55, 0.35);
+        0 0 8px #d4af37,
+        0 0 20px rgba(212, 175, 55, 0.45);
 
     margin-bottom: 10px;
 }
 
-/* FOTO */
+
+/* =========================================
+   FOTO
+========================================= */
 
 .foto-contenedor {
     display: flex;
+
     justify-content: center;
+
     margin: 15px 0 25px;
 }
 
+
 .foto-perfil {
     width: 180px;
+
     height: 180px;
 
     object-fit: cover;
 
+    object-position: center;
+
     border-radius: 50%;
 
-    border: 3px solid #d4af37;
+    border: 4px solid #d4af37;
 
-    padding: 4px;
+    padding: 5px;
 
-    background: #050505;
+    background:
+        linear-gradient(
+            135deg,
+            #7b001b,
+            #5b0b7a,
+            #d4af37
+        );
 
     box-shadow:
-        0 0 25px rgba(212, 175, 55, 0.25);
+        0 0 20px rgba(212, 175, 55, 0.35),
+        0 0 35px rgba(106, 13, 173, 0.25);
 }
 
-/* TITULOS */
+
+/* =========================================
+   TITULOS
+========================================= */
 
 h1 {
     color: #d4af37;
+
     font-size: 42px;
+
     margin-bottom: 8px;
+
+    text-shadow:
+        0 0 10px rgba(212, 175, 55, 0.20);
 }
 
+
 .principal h2 {
-    color: #ddd;
+    color: #ff4b5c;
+
     font-size: 24px;
+
     font-weight: normal;
+
     margin-bottom: 20px;
 }
 
+
 .presentacion {
     max-width: 700px;
+
     margin: auto;
 
     font-size: 20px;
-    color: #ccc;
+
+    color: #eeeeee;
 }
 
-/* BOTONES */
+
+/* =========================================
+   BOTONES
+========================================= */
 
 .botones-principales {
     margin-top: 35px;
 
     display: flex;
+
     justify-content: center;
+
     flex-wrap: wrap;
 
     gap: 15px;
 }
+
 
 .boton {
     display: inline-block;
@@ -149,6 +245,13 @@ h1 {
 
     border: 1px solid #d4af37;
 
+    background:
+        linear-gradient(
+            90deg,
+            rgba(128, 0, 32, 0.25),
+            rgba(106, 13, 173, 0.25)
+        );
+
     padding: 12px 25px;
 
     border-radius: 30px;
@@ -158,26 +261,43 @@ h1 {
     transition: 0.3s;
 }
 
+
 .boton:hover {
-    background: #d4af37;
-    color: #000;
+    background:
+        linear-gradient(
+            90deg,
+            #8b001f,
+            #6a0dad
+        );
+
+    color: #ffffff;
+
+    border-color: #d4af37;
 
     box-shadow:
-        0 0 20px rgba(212, 175, 55, 0.35);
+        0 0 18px rgba(212, 175, 55, 0.35);
 }
 
-/* SECCIONES */
+
+/* =========================================
+   SECCIONES
+========================================= */
 
 section {
     padding: 90px 20px;
 }
 
+
 .contenedor {
     width: 100%;
+
     max-width: 1050px;
+
     margin: auto;
+
     text-align: center;
 }
+
 
 .titulo {
     color: #d4af37;
@@ -186,10 +306,14 @@ section {
 
     margin-bottom: 45px;
 
-    text-align: center;
+    text-shadow:
+        0 0 12px rgba(212, 175, 55, 0.20);
 }
 
-/* TARJETAS */
+
+/* =========================================
+   TARJETAS
+========================================= */
 
 .tarjetas {
     display: grid;
@@ -200,31 +324,45 @@ section {
     gap: 25px;
 }
 
-.tarjeta {
-    background: rgba(7, 7, 7, 0.94);
 
-    border: 1px solid #765d15;
+.tarjeta {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(55, 3, 24, 0.88),
+            rgba(25, 4, 43, 0.92)
+        );
+
+    border: 1px solid #7a1236;
 
     border-radius: 18px;
 
     padding: 30px 22px;
 
     transition: 0.3s;
+
+    box-shadow:
+        0 0 15px rgba(106, 13, 173, 0.10);
 }
 
+
 .tarjeta:hover {
-    transform: translateY(-6px);
+    transform: translateY(-7px);
 
     border-color: #d4af37;
 
     box-shadow:
-        0 0 25px rgba(212, 175, 55, 0.15);
+        0 0 25px rgba(212, 175, 55, 0.20),
+        0 0 25px rgba(106, 13, 173, 0.15);
 }
+
 
 .icono {
     font-size: 42px;
+
     margin-bottom: 12px;
 }
+
 
 .tarjeta h3 {
     color: #d4af37;
@@ -234,16 +372,29 @@ section {
     margin-bottom: 15px;
 }
 
+
 .tarjeta p {
-    color: #ccc;
+    color: #eeeeee;
+
     font-size: 17px;
 }
 
-/* OFICINA */
+
+/* =========================================
+   AUXILIAR DE OFICINA
+========================================= */
 
 .oficina {
-    border-color: #a47d16;
+    border-color: #d4af37;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(93, 5, 27, 0.90),
+            rgba(68, 8, 91, 0.90)
+        );
 }
+
 
 .oficina ul {
     list-style: none;
@@ -253,13 +404,16 @@ section {
     text-align: left;
 }
 
+
 .oficina li {
-    color: #ccc;
+    color: #eeeeee;
 
     padding: 6px 0;
 
-    border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+    border-bottom:
+        1px solid rgba(212, 175, 55, 0.15);
 }
+
 
 .oficina li::before {
     content: "◆";
@@ -271,24 +425,44 @@ section {
     font-size: 10px;
 }
 
-/* TRABAJOS */
+
+/* =========================================
+   TRABAJOS
+========================================= */
 
 .trabajos {
     max-width: 800px;
+
     margin: auto;
 }
 
-.trabajo {
-    background: rgba(7, 7, 7, 0.94);
 
-    border: 1px solid #765d15;
+.trabajo {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(48, 3, 24, 0.90),
+            rgba(28, 5, 45, 0.92)
+        );
+
+    border: 1px solid #7a1236;
 
     border-radius: 16px;
 
     padding: 25px;
 
     margin-bottom: 20px;
+
+    transition: 0.3s;
 }
+
+
+.trabajo:hover {
+    border-color: #d4af37;
+
+    transform: translateX(5px);
+}
+
 
 .trabajo h3 {
     color: #d4af37;
@@ -298,16 +472,20 @@ section {
     margin-bottom: 8px;
 }
 
+
 .trabajo p {
-    color: #ccc;
+    color: #eeeeee;
 
     font-size: 17px;
 }
 
-/* REDES */
+
+/* =========================================
+   REDES SOCIALES
+========================================= */
 
 .texto-redes {
-    color: #ccc;
+    color: #eeeeee;
 
     font-size: 20px;
 
@@ -316,9 +494,11 @@ section {
     margin-bottom: 40px;
 }
 
+
 .texto-redes strong {
     color: #d4af37;
 }
+
 
 .redes {
     display: grid;
@@ -328,6 +508,7 @@ section {
 
     gap: 25px;
 }
+
 
 .red {
     min-height: 220px;
@@ -344,14 +525,20 @@ section {
 
     text-decoration: none;
 
-    background: rgba(5, 5, 5, 0.96);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(55, 2, 25, 0.94),
+            rgba(38, 4, 65, 0.94)
+        );
 
-    border: 1px solid #765d15;
+    border: 1px solid #7a1236;
 
     border-radius: 20px;
 
     transition: 0.3s;
 }
+
 
 .red:hover {
     transform: translateY(-8px);
@@ -359,19 +546,22 @@ section {
     border-color: #d4af37;
 
     box-shadow:
-        0 0 25px rgba(212, 175, 55, 0.2);
+        0 0 25px rgba(212, 175, 55, 0.20);
 }
+
 
 .red-icono {
     width: 70px;
+
     height: 70px;
 
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 
-    border: 1px solid #d4af37;
+    border: 2px solid #d4af37;
 
     border-radius: 50%;
 
@@ -380,7 +570,15 @@ section {
     font-size: 42px;
 
     margin-bottom: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(139, 0, 0, 0.35),
+            rgba(106, 13, 173, 0.35)
+        );
 }
+
 
 .red h3 {
     color: #d4af37;
@@ -390,21 +588,26 @@ section {
     margin-bottom: 5px;
 }
 
+
 .red p {
-    color: #bbb;
+    color: #eeeeee;
 
     font-size: 16px;
 
     margin-bottom: 12px;
 }
 
+
 .red span {
-    color: #d4af37;
+    color: #ff4b5c;
 
     font-size: 16px;
 }
 
-/* CONTACTO */
+
+/* =========================================
+   CONTACTO
+========================================= */
 
 .contacto {
     max-width: 700px;
@@ -413,26 +616,39 @@ section {
 
     padding: 35px;
 
-    background: rgba(5, 5, 5, 0.95);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(52, 3, 25, 0.92),
+            rgba(31, 5, 51, 0.92)
+        );
 
-    border: 1px solid #765d15;
+    border: 1px solid #d4af37;
 
     border-radius: 20px;
+
+    box-shadow:
+        0 0 25px rgba(106, 13, 173, 0.15);
 }
 
+
 .contacto p {
-    color: #ccc;
+    color: #eeeeee;
 
     font-size: 19px;
 
     margin: 12px 0;
 }
 
+
 .contacto strong {
     color: #d4af37;
 }
 
-/* ADMIN */
+
+/* =========================================
+   ADMINISTRADOR
+========================================= */
 
 .admin-caja {
     max-width: 650px;
@@ -441,25 +657,37 @@ section {
 
     padding: 35px;
 
-    background: rgba(5, 5, 5, 0.95);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(55, 3, 25, 0.92),
+            rgba(35, 5, 55, 0.92)
+        );
 
-    border: 1px solid #765d15;
+    border: 1px solid #d4af37;
 
     border-radius: 20px;
 }
 
+
 .admin-caja p {
-    color: #bbb;
+    color: #eeeeee;
 
     font-size: 18px;
 
     margin-bottom: 25px;
 }
 
-.boton-admin {
-    background: transparent;
 
-    color: #d4af37;
+.boton-admin {
+    background:
+        linear-gradient(
+            90deg,
+            #7b001b,
+            #6a0dad
+        );
+
+    color: #ffffff;
 
     border: 1px solid #d4af37;
 
@@ -476,13 +704,23 @@ section {
     transition: 0.3s;
 }
 
-.boton-admin:hover {
-    background: #d4af37;
 
-    color: #000;
+.boton-admin:hover {
+    background:
+        linear-gradient(
+            90deg,
+            #a8002a,
+            #8415bd
+        );
+
+    box-shadow:
+        0 0 20px rgba(212, 175, 55, 0.30);
 }
 
-/* MODAL */
+
+/* =========================================
+   MODAL
+========================================= */
 
 .modal {
     display: none;
@@ -491,7 +729,8 @@ section {
 
     inset: 0;
 
-    background: rgba(0, 0, 0, 0.88);
+    background:
+        rgba(20, 0, 20, 0.90);
 
     justify-content: center;
 
@@ -501,6 +740,7 @@ section {
 
     z-index: 1000;
 }
+
 
 .modal-contenido {
     position: relative;
@@ -513,15 +753,21 @@ section {
 
     text-align: center;
 
-    background: #080808;
+    background:
+        linear-gradient(
+            145deg,
+            #350319,
+            #21052f
+        );
 
     border: 1px solid #d4af37;
 
     border-radius: 20px;
 
     box-shadow:
-        0 0 35px rgba(212, 175, 55, 0.2);
+        0 0 35px rgba(212, 175, 55, 0.25);
 }
+
 
 .modal-contenido h2 {
     color: #d4af37;
@@ -531,11 +777,13 @@ section {
     font-size: 30px;
 }
 
+
 .modal-contenido p {
-    color: #aaa;
+    color: #eeeeee;
 
     margin-bottom: 20px;
 }
+
 
 .modal-contenido input {
     width: 100%;
@@ -544,11 +792,11 @@ section {
 
     margin-bottom: 15px;
 
-    background: #111;
+    background: #100611;
 
     color: white;
 
-    border: 1px solid #765d15;
+    border: 1px solid #7a1236;
 
     border-radius: 10px;
 
@@ -559,9 +807,14 @@ section {
     font-size: 17px;
 }
 
+
 .modal-contenido input:focus {
     border-color: #d4af37;
+
+    box-shadow:
+        0 0 10px rgba(212, 175, 55, 0.20);
 }
+
 
 .cerrar {
     position: absolute;
@@ -581,21 +834,26 @@ section {
     cursor: pointer;
 }
 
-.mensaje-admin {
-    margin-top: 18px;
-}
 
-/* FOOTER */
+/* =========================================
+   FOOTER
+========================================= */
 
 footer {
     text-align: center;
 
     padding: 40px 20px;
 
-    border-top: 1px solid #765d15;
+    border-top: 1px solid #7a1236;
 
-    background: #020202;
+    background:
+        linear-gradient(
+            180deg,
+            #10020d,
+            #050108
+        );
 }
+
 
 .footer-logo {
     font-family: cursive;
@@ -607,13 +865,17 @@ footer {
     margin-bottom: 5px;
 }
 
+
 footer p {
-    color: #aaa;
+    color: #bbbbbb;
 
     margin: 5px 0;
 }
 
-/* CELULAR */
+
+/* =========================================
+   CELULAR
+========================================= */
 
 @media (max-width: 750px) {
 
@@ -621,41 +883,53 @@ footer p {
         padding: 40px 20px;
     }
 
+
     .logo {
         font-size: 58px;
     }
 
+
     .foto-perfil {
         width: 145px;
+
         height: 145px;
     }
+
 
     h1 {
         font-size: 31px;
     }
 
+
     .principal h2 {
         font-size: 20px;
     }
+
 
     .presentacion {
         font-size: 17px;
     }
 
+
     .titulo {
         font-size: 30px;
     }
+
 
     .redes {
         grid-template-columns: 1fr;
     }
 
+
     .botones-principales {
         flex-direction: column;
+
         align-items: center;
     }
+
 
     .boton {
         width: 90%;
     }
+
 }
