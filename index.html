@@ -4,239 +4,518 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Juan Sebastian López | Sistemas y Tecnología</title>
+    <title>Juan L Sistemas y Tecnología</title>
 
     <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="encabezado">
+    <!-- DECORACIÓN -->
+    <div class="puntos"></div>
 
-        <div class="perfil">
-            <img src="Profile.jpg" alt="Foto de perfil">
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+    <header>
+
+        <div class="principal">
+
+            <div class="logo">JS</div>
+
+            <!-- FOTO DE PERFIL -->
+            <div class="foto-contenedor">
+                <img
+                    src="imagenes/foto-perfil.jpg"
+                    alt="Juan Sebastian López"
+                    class="foto-perfil"
+                >
+            </div>
+
+            <h1>Juan L Sistemas y Tecnología</h1>
+
+            <h2>Técnico en Sistemas</h2>
+
+            <p class="presentacion">
+                Soluciones tecnológicas, soporte informático,
+                mantenimiento de computadores, redes y servicios
+                de oficina.
+            </p>
+
+            <div class="botones-principales">
+
+                <a href="#servicios" class="boton">
+                    Mis Servicios
+                </a>
+
+                <a href="#trabajos" class="boton">
+                    Mis Trabajos
+                </a>
+
+                <a href="#redes" class="boton">
+                    Mis Redes
+                </a>
+
+                <a href="#contacto" class="boton">
+                    Contacto
+                </a>
+
+            </div>
+
         </div>
-
-        <h1>Juan Sebastian López</h1>
-
-        <h2>Sistemas y Tecnología</h2>
-
-        <p>
-            Servicios tecnológicos, soporte técnico, mantenimiento
-            y soluciones para equipos y oficinas.
-        </p>
 
     </header>
 
 
-    <!-- MENÚ -->
-    <nav>
-        <a href="#tecnologia">Tecnología</a>
-        <a href="#oficina">Oficina</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+    <!-- =========================
+         SERVICIOS
+    ========================== -->
+    <section id="servicios">
 
+        <div class="contenedor">
 
-    <main>
+            <h2 class="titulo">
+                Mis Servicios
+            </h2>
 
-        <!-- SERVICIOS TECNOLÓGICOS -->
-        <section id="tecnologia" class="seccion">
-
-            <h2>✦ Servicios Tecnológicos ✦</h2>
-
-            <p class="descripcion">
-                Conoce los diferentes servicios tecnológicos
-                que puedo realizar.
-            </p>
-
-            <div class="servicios">
+            <div class="tarjetas">
 
                 <div class="tarjeta">
-                    <h3>💻 Mantenimiento de Computadores</h3>
+                    <div class="icono">💻</div>
+
+                    <h3>Mantenimiento de Computadores</h3>
+
                     <p>
-                        Limpieza, revisión y mantenimiento preventivo
-                        para ayudar a mejorar el funcionamiento del equipo.
+                        Limpieza, mantenimiento preventivo,
+                        optimización y revisión de computadores
+                        de escritorio y portátiles.
                     </p>
                 </div>
 
+
                 <div class="tarjeta">
-                    <h3>🛠️ Reparación y Diagnóstico</h3>
+                    <div class="icono">⚙️</div>
+
+                    <h3>Sistemas</h3>
+
                     <p>
-                        Revisión de problemas de hardware y software
-                        para encontrar posibles soluciones.
+                        Instalación y configuración de sistemas,
+                        programas, controladores y herramientas
+                        informáticas.
                     </p>
                 </div>
 
+
                 <div class="tarjeta">
-                    <h3>💾 Instalación de Programas</h3>
+                    <div class="icono">📶</div>
+
+                    <h3>Redes Wi-Fi</h3>
+
                     <p>
-                        Instalación y configuración de programas
-                        necesarios para estudio, trabajo y uso personal.
+                        Configuración de routers, redes Wi-Fi,
+                        solución de problemas y ampliación
+                        de cobertura.
                     </p>
                 </div>
 
+
                 <div class="tarjeta">
-                    <h3>🛡️ Eliminación de Virus</h3>
+                    <div class="icono">📹</div>
+
+                    <h3>Cámaras de Seguridad</h3>
+
                     <p>
-                        Revisión del equipo y eliminación de software
-                        malicioso que pueda afectar su funcionamiento.
+                        Instalación y configuración de cámaras
+                        de seguridad y acceso desde dispositivos.
                     </p>
                 </div>
 
+
                 <div class="tarjeta">
-                    <h3>📶 Redes WiFi</h3>
+                    <div class="icono">💾</div>
+
+                    <h3>RAM y SSD</h3>
+
                     <p>
-                        Configuración y mejora de conexiones WiFi
-                        para hogares, habitaciones y pequeños negocios.
+                        Instalación y actualización de memoria RAM,
+                        discos SSD y optimización del almacenamiento.
                     </p>
                 </div>
 
+
                 <div class="tarjeta">
-                    <h3>📡 Instalación de Redes</h3>
+                    <div class="icono">🖨️</div>
+
+                    <h3>Impresoras</h3>
+
                     <p>
-                        Apoyo en la conexión y organización de redes
-                        mediante cable o conexión inalámbrica.
+                        Instalación, configuración de impresoras,
+                        controladores y solución de problemas.
                     </p>
                 </div>
 
+
                 <div class="tarjeta">
-                    <h3>💿 Actualización de Computadores</h3>
+                    <div class="icono">🛡️</div>
+
+                    <h3>Seguridad Informática</h3>
+
                     <p>
-                        Instalación o cambio de memoria RAM, discos SSD
-                        y otros componentes compatibles.
+                        Configuración de privacidad, seguridad
+                        y protección de cuentas y dispositivos.
                     </p>
                 </div>
 
-                <div class="tarjeta">
-                    <h3>🖨️ Configuración de Impresoras</h3>
+
+                <!-- AUXILIAR DE OFICINA -->
+                <div class="tarjeta oficina">
+
+                    <div class="icono">📋</div>
+
+                    <h3>Auxiliar de Oficina</h3>
+
                     <p>
-                        Instalación y configuración de impresoras
-                        para su uso en computadores y redes.
+                        Servicios de apoyo para trabajos de oficina,
+                        organización de información y herramientas
+                        digitales.
+                    </p>
+
+                    <ul>
+                        <li>Digitación de documentos</li>
+                        <li>Organización de archivos</li>
+                        <li>Microsoft Word</li>
+                        <li>Microsoft Excel</li>
+                        <li>Microsoft PowerPoint</li>
+                        <li>Impresión de documentos</li>
+                        <li>Escaneo de documentos</li>
+                        <li>Organización digital</li>
+                        <li>Apoyo en trabajos de oficina</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TRABAJOS
+    ========================== -->
+    <section id="trabajos">
+
+        <div class="contenedor">
+
+            <h2 class="titulo">
+                Trabajos y Servicios Realizados
+            </h2>
+
+            <div class="trabajos">
+
+                <div class="trabajo">
+                    <h3>💻 Mantenimiento de Equipos</h3>
+
+                    <p>
+                        Revisión, limpieza y optimización
+                        de computadores.
                     </p>
                 </div>
 
-                <div class="tarjeta">
-                    <h3>📱 Configuración de Dispositivos</h3>
+
+                <div class="trabajo">
+                    <h3>📶 Redes y Conectividad</h3>
+
                     <p>
-                        Apoyo en configuraciones básicas de celulares,
-                        computadores y otros dispositivos tecnológicos.
+                        Configuración de redes Wi-Fi,
+                        routers y dispositivos.
                     </p>
                 </div>
 
-                <div class="tarjeta">
-                    <h3>🔐 Seguridad Digital</h3>
+
+                <div class="trabajo">
+                    <h3>📹 Sistemas de Seguridad</h3>
+
                     <p>
-                        Apoyo para mejorar la seguridad de cuentas,
-                        contraseñas y configuraciones básicas.
+                        Instalación y configuración de
+                        cámaras de seguridad.
+                    </p>
+                </div>
+
+
+                <div class="trabajo">
+                    <h3>🖨️ Equipos de Oficina</h3>
+
+                    <p>
+                        Configuración de impresoras,
+                        computadores y herramientas
+                        de oficina.
+                    </p>
+                </div>
+
+
+                <div class="trabajo">
+                    <h3>🛠️ Soporte Técnico</h3>
+
+                    <p>
+                        Solución de problemas relacionados
+                        con hardware y software.
                     </p>
                 </div>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
-        <!-- TRABAJOS DE OFICINA -->
-        <section id="oficina" class="seccion">
+    <!-- =========================
+         REDES SOCIALES
+    ========================== -->
+    <section id="redes">
 
-            <h2>✦ Trabajos de Oficina ✦</h2>
+        <div class="contenedor">
 
-            <p class="descripcion">
-                También ofrezco apoyo para diferentes trabajos
-                digitales y documentos de oficina.
+            <h2 class="titulo">
+                Mis Redes Sociales
+            </h2>
+
+            <p class="texto-redes">
+                Sígueme y búscame como
+                <strong>Juan L Sistemas y Tecnología</strong>
             </p>
 
-            <div class="servicios">
 
-                <div class="tarjeta">
-                    <h3>📄 Documentos en Word</h3>
-                    <p>
-                        Creación, digitación y organización de documentos,
-                        cartas, hojas de vida y otros trabajos.
-                    </p>
-                </div>
+            <div class="redes">
 
-                <div class="tarjeta">
-                    <h3>📊 Trabajos en Excel</h3>
-                    <p>
-                        Creación y organización de tablas, listas,
-                        registros y hojas de cálculo.
-                    </p>
-                </div>
 
-                <div class="tarjeta">
-                    <h3>🎞️ Presentaciones</h3>
-                    <p>
-                        Creación y organización de presentaciones
-                        para estudios, proyectos o trabajos.
-                    </p>
-                </div>
+                <!-- INSTAGRAM -->
 
-                <div class="tarjeta">
-                    <h3>⌨️ Digitación</h3>
-                    <p>
-                        Transcripción y organización de información
-                        en documentos digitales.
-                    </p>
-                </div>
+                <a
+                    href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=6gaapg6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="red"
+                >
 
-                <div class="tarjeta">
-                    <h3>📑 Formularios y Registros</h3>
-                    <p>
-                        Ayuda en la creación y organización de formularios,
-                        listas y registros digitales.
-                    </p>
-                </div>
+                    <div class="red-icono instagram">
+                        ◎
+                    </div>
 
-                <div class="tarjeta">
-                    <h3>📧 Correo Electrónico</h3>
+                    <h3>Instagram</h3>
+
                     <p>
-                        Apoyo en configuraciones básicas y organización
-                        de cuentas de correo electrónico.
+                        Juan L Sistemas y Tecnología
                     </p>
-                </div>
+
+                    <span>
+                        Ver perfil →
+                    </span>
+
+                </a>
+
+
+                <!-- FACEBOOK -->
+
+                <a
+                    href="https://www.facebook.com/share/17uGudYPWf/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="red"
+                >
+
+                    <div class="red-icono facebook">
+                        f
+                    </div>
+
+                    <h3>Facebook</h3>
+
+                    <p>
+                        Juan L Sistemas y Tecnología
+                    </p>
+
+                    <span>
+                        Ver perfil →
+                    </span>
+
+                </a>
+
+
+                <!-- TIKTOK -->
+
+                <a
+                    href="https://www.tiktok.com/@juan.l.sistemas.y?_r=1&_d=ej517bjhec0j2b&sec_uid=MS4wLjABAAAAzvht27pwDwfVtH5E9D7zvEMkzPyYyluSy4qZY0FehYeqnl1hhpMDjhjh4dD727uu&share_author_id=7644701826143323152&sharer_language=es&source=h5_m&u_code=f3j7aed4d8g4ge&timestamp=1786826521&user_id=7644701826143323152&sec_user_id=MS4wLjABAAAAzvht27pwDwfVtH5E9D7zvEMkzPyYyluSy4qZY0FehYeqnl1hhpMDjhjh4dD727uu&item_author_type=1&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7672465612282660629&share_link_id=41153abb-f819-46a4-9d9a-6b1a0853b82a&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb4907&social_share_type=5&share_enter_from=settings_page&enable_checksum=1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="red"
+                >
+
+                    <div class="red-icono tiktok">
+                        ♪
+                    </div>
+
+                    <h3>TikTok</h3>
+
+                    <p>
+                        @juan.l.sistemas.y
+                    </p>
+
+                    <span>
+                        Ver perfil →
+                    </span>
+
+                </a>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
-        <!-- CONTACTO -->
-        <section id="contacto" class="seccion">
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+    <section id="contacto">
 
-            <h2>✦ Contacto ✦</h2>
+        <div class="contenedor">
 
-            <p class="descripcion">
-                Comunícate conmigo por WhatsApp para solicitar
-                información sobre los servicios.
-            </p>
+            <h2 class="titulo">
+                Contacto
+            </h2>
 
-            <!-- CAMBIA TU_NUMERO POR TU NÚMERO -->
-            <a class="boton-whatsapp"
-               href="https://wa.me/57TU_NUMERO"
-               target="_blank"
-               rel="noopener">
+            <div class="contacto">
 
-                📱 Escribirme por WhatsApp
+                <p>
+                    <strong>Nombre:</strong>
+                    Juan Sebastian López
+                </p>
 
-            </a>
+                <p>
+                    <strong>Profesión:</strong>
+                    Técnico en Sistemas
+                </p>
 
-        </section>
+                <p>
+                    <strong>Marca:</strong>
+                    Juan L Sistemas y Tecnología
+                </p>
 
-    </main>
+                <p>
+                    <strong>Servicios:</strong>
+                    Sistemas, Tecnología y Auxiliar de Oficina
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
-    <!-- PIE DE PÁGINA -->
+    <!-- =========================
+         ADMINISTRADOR
+    ========================== -->
+    <section id="administrador">
+
+        <div class="contenedor">
+
+            <h2 class="titulo">
+                Administración
+            </h2>
+
+            <div class="admin-caja">
+
+                <p>
+                    Área destinada a la administración
+                    del sitio web.
+                </p>
+
+                <button
+                    onclick="abrirAdministrador()"
+                    class="boton-admin"
+                >
+                    Acceder como Administrador
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+
     <footer>
 
-        <div class="logo">JS</div>
+        <div class="footer-logo">
+            JS
+        </div>
+
+        <p>
+            Juan L Sistemas y Tecnología
+        </p>
 
         <p>
             © 2026 Juan Sebastian López | Técnico en Sistemas
         </p>
 
     </footer>
+
+
+    <!-- =========================
+         VENTANA ADMIN
+    ========================== -->
+
+    <div
+        id="adminModal"
+        class="modal"
+    >
+
+        <div class="modal-contenido">
+
+            <button
+                onclick="cerrarAdministrador()"
+                class="cerrar"
+            >
+                ×
+            </button>
+
+            <h2>Administrador</h2>
+
+            <p>
+                Panel de administración del sitio.
+            </p>
+
+            <input
+                type="password"
+                id="claveAdmin"
+                placeholder="Contraseña"
+            >
+
+            <button
+                onclick="entrarAdmin()"
+                class="boton-admin"
+            >
+                Entrar
+            </button>
+
+            <p
+                id="mensajeAdmin"
+                class="mensaje-admin"
+            ></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
