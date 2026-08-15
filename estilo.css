@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at top left, #4b003f, transparent 35%),
+        radial-gradient(circle at bottom right, #650000, transparent 40%),
+        #160012;
+}
+
+/* FOTO Y ENCABEZADO */
+
+.encabezado {
+    padding: 50px 20px 35px;
+}
+
+.perfil {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #d4af37;
+    background: #3a0030;
+
+    box-shadow:
+        0 0 15px #d4af37,
+        0 0 30px #8a006d;
+}
+
+.perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.encabezado h1 {
+    color: #d4af37;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.encabezado h2 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.encabezado p {
+    max-width: 700px;
+    margin: auto;
+    color: #eeeeee;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* MENU */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px;
+
+    background: rgba(70, 0, 55, 0.7);
+
+    border-top: 1px solid #d4af37;
+    border-bottom: 1px solid #d4af37;
+}
+
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #d4af37;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background: #d4af37;
+    color: #4b003f;
+}
+
+/* SECCIONES */
+
+.seccion {
+    width: 92%;
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 35px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(92, 0, 72, 0.9),
+            rgba(80, 0, 0, 0.9)
+        );
+
+    border: 2px solid #d4af37;
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 20px rgba(212, 175, 55, 0.2),
+        0 0 30px rgba(128, 0, 90, 0.3);
+}
+
+.seccion h2 {
+    color: #d4af37;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.descripcion {
+    color: #eeeeee;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* SERVICIOS */
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    padding: 25px 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #570042,
+            #700000
+        );
+
+    border: 2px solid #d4af37;
+    border-radius: 14px;
+}
+
+.tarjeta h3 {
+    color: #ffd866;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* BOTON WHATSAPP */
+
+.boton-whatsapp {
+    display: inline-block;
+    padding: 16px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d4af37,
+            #ffd866
+        );
+
+    color: #4b003f;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* PIE */
+
+footer {
+    margin-top: 50px;
+    padding: 40px 20px;
+
+    background: rgba(60, 0, 45, 0.8);
+
+    border-top: 2px solid #d4af37;
+    color: white;
+}
+
+.logo {
+    color: #d4af37;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    .encabezado {
+        padding: 35px 15px 25px;
+    }
+
+    .perfil {
+        width: 145px;
+        height: 145px;
+    }
+
+    .encabezado h1 {
+        font-size: 31px;
+    }
+
+    .encabezado h2 {
+        font-size: 21px;
+    }
+
+    .encabezado p {
+        font-size: 16px;
+    }
+
+    nav {
+        gap: 8px;
+        padding: 15px 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 9px 11px;
+    }
+
+    .seccion {
+        width: 94%;
+        padding: 25px 15px;
+    }
+
+    .seccion h2 {
+        font-size: 27px;
+    }
+
+    .servicios {
+        grid-template-columns: 1fr;
+    }
+}
